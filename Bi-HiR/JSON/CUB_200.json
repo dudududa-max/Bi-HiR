@@ -1,0 +1,681 @@
+{
+    "id": 1000,
+    "label": "BIRDS",
+    "type": "internal",
+    "children": [
+      {
+        "id": 1100,
+        "label": "Procellariiformes",
+        "type": "internal",
+        "children": [
+          {
+            "id": 1110,
+            "label": "Diomedeidae",
+            "type": "internal",
+            "children": [
+              {
+                "id": 1111,
+                "label": "Phoebastria",
+                "type": "internal",
+                "children": [
+                  { "id": 0, "label": "Black_footed_Albatross", "type": "leaf" },
+                  { "id": 1, "label": "Laysan_Albatross", "type": "leaf" }
+                ]
+              },
+              {
+                "id": 1112,
+                "label": "Phoebetria",
+                "type": "internal",
+                "children": [
+                  { "id": 2, "label": "Sooty_Albatross", "type": "leaf" }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 1120,
+            "label": "Procellariidae",
+            "type": "internal",
+            "children": [
+              {
+                "id": 1121,
+                "label": "Fulmarus",
+                "type": "internal",
+                "children": [
+                  { "id": 44, "label": "Northern_Fulmar", "type": "leaf" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 1200,
+        "label": "Suliformes",
+        "type": "internal",
+        "children": [
+          {
+            "id": 1210,
+            "label": "Phalacrocoracidae",
+            "type": "internal",
+            "children": [
+              {
+                "id": 1211,
+                "label": "Urile",
+                "type": "internal",
+                "children": [
+                  { "id": 24, "label": "Pelagic_Cormorant", "type": "leaf" }
+                ]
+              },
+              {
+                "id": 1212,
+                "label": "Phalacrocorax",
+                "type": "internal",
+                "children": [
+                  { "id": 22, "label": "Brandt_Cormorant", "type": "leaf" },
+                  { "id": 23, "label": "Red_faced_Cormorant", "type": "leaf" }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 1220,
+            "label": "Fregatidae",
+            "type": "internal",
+            "children": [
+              {
+                "id": 1221,
+                "label": "Fregata",
+                "type": "internal",
+                "children": [
+                  { "id": 43, "label": "Frigatebird", "type": "leaf" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 1300,
+        "label": "Charadriiformes",
+        "type": "internal",
+        "children": [
+          {
+            "id": 1310,
+            "label": "Alcidae",
+            "type": "internal",
+            "children": [
+              {
+                "id": 1311,
+                "label": "Aethia",
+                "type": "internal",
+                "children": [
+                  { "id": 5, "label": "Least_Auklet", "type": "leaf" },
+                  { "id": 7, "label": "Rhinoceros_Auklet", "type": "leaf" }
+                ]
+              },
+              {
+                "id": 1312,
+                "label": "Cerorhinca",
+                "type": "internal",
+                "children": [
+                  { "id": 6, "label": "Parakeet_Auklet", "type": "leaf" }
+                ]
+              },
+              {
+                "id": 1313,
+                "label": "Fratercula",
+                "type": "internal",
+                "children": [
+                  { "id": 105, "label": "Horned_Puffin", "type": "leaf" }
+                ]
+              },
+              {
+                "id": 1314,
+                "label": "Cepphus",
+                "type": "internal",
+                "children": [
+                  { "id": 57, "label": "Pigeon_Guillemot", "type": "leaf" }
+                ]
+              },
+              {
+                "id": 1315,
+                "label": "Aethiini",
+                "type": "internal",
+                "children": [
+                  { "id": 4, "label": "Crested_Auklet", "type": "leaf" }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 1320,
+            "label": "Laridae",
+            "type": "internal",
+            "children": [
+              {
+                "id": 1321,
+                "label": "Rissa",
+                "type": "internal",
+                "children": [
+                  { "id": 83, "label": "Red_legged_Kittiwake", "type": "leaf" }
+                ]
+              },
+              {
+                "id": 1322,
+                "label": "Larus",
+                "type": "internal",
+                "children": [
+                  { "id": 58, "label": "California_Gull", "type": "leaf" },
+                  { "id": 59, "label": "Glaucous_winged_Gull", "type": "leaf" },
+                  { "id": 61, "label": "Herring_Gull", "type": "leaf" },
+                  { "id": 63, "label": "Ring_billed_Gull", "type": "leaf" },
+                  { "id": 64, "label": "Slaty_backed_Gull", "type": "leaf" },
+                  { "id": 65, "label": "Western_Gull", "type": "leaf" }
+                ]
+              },
+              {
+                "id": 1323,
+                "label": "Leucophaeus",
+                "type": "internal",
+                "children": [
+                  { "id": 60, "label": "Heermann_Gull", "type": "leaf" }
+                ]
+              },
+              {
+                "id": 1324,
+                "label": "Sterninae",
+                "type": "internal",
+                "children": [
+                  {
+                    "id": 1325,
+                    "label": "Thalasseus",
+                    "type": "internal",
+                    "children": [
+                      { "id": 144, "label": "Elegant_Tern", "type": "leaf" }
+                    ]
+                  },
+                  {
+                    "id": 1326,
+                    "label": "Sterna",
+                    "type": "internal",
+                    "children": [
+                      { "id": 140, "label": "Artic_Tern", "type": "leaf" },
+                      { "id": 143, "label": "Common_Tern", "type": "leaf" },
+                      { "id": 145, "label": "Forsters_Tern", "type": "leaf" }
+                    ]
+                  },
+                  {
+                    "id": 1327,
+                    "label": "Hydroprogne",
+                    "type": "internal",
+                    "children": [
+                      { "id": 142, "label": "Caspian_Tern", "type": "leaf" }
+                    ]
+                  },
+                  {
+                    "id": 1328,
+                    "label": "Sternula",
+                    "type": "internal",
+                    "children": [
+                      { "id": 146, "label": "Least_Tern", "type": "leaf" }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": 1329,
+                "label": "Chlidonias",
+                "type": "internal",
+                "children": [
+                  { "id": 141, "label": "Black_Tern", "type": "leaf" }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 1330,
+            "label": "Stercorariidae",
+            "type": "internal",
+            "children": [
+              {
+                "id": 1331,
+                "label": "Stercorarius",
+                "type": "internal",
+                "children": [
+                  { "id": 70, "label": "Long_tailed_Jaeger", "type": "leaf" },
+                  { "id": 71, "label": "Pomarine_Jaeger", "type": "leaf" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 1400,
+        "label": "Podicipediformes",
+        "type": "internal",
+        "children": [
+          {
+            "id": 1410,
+            "label": "Podicipedidae",
+            "type": "internal",
+            "children": [
+              {
+                "id": 1411,
+                "label": "Aechmophorus",
+                "type": "internal",
+                "children": [
+                  { "id": 52, "label": "Western_Grebe", "type": "leaf" }
+                ]
+              },
+              {
+                "id": 1412,
+                "label": "Podiceps",
+                "type": "internal",
+                "children": [
+                  { "id": 49, "label": "Eared_Grebe", "type": "leaf" },
+                  { "id": 50, "label": "Horned_Grebe", "type": "leaf" }
+                ]
+              },
+              {
+                "id": 1413,
+                "label": "Podilymbus",
+                "type": "internal",
+                "children": [
+                  { "id": 51, "label": "Pied_billed_Grebe", "type": "leaf" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 1500,
+        "label": "Anseriformes",
+        "type": "internal",
+        "children": [
+          {
+            "id": 1510,
+            "label": "Anatidae",
+            "type": "internal",
+            "children": [
+              {
+                "id": 1511,
+                "label": "Anas",
+                "type": "internal",
+                "children": [
+                  { "id": 45, "label": "Gadwall", "type": "leaf" },
+                  { "id": 86, "label": "Mallard", "type": "leaf" }
+                ]
+              },
+              {
+                "id": 1512,
+                "label": "Mergini",
+                "type": "internal",
+                "children": [
+                  {
+                    "id": 1513,
+                    "label": "Lophodytes",
+                    "type": "internal",
+                    "children": [
+                      { "id": 88, "label": "Hooded_Merganser", "type": "leaf" }
+                    ]
+                  },
+                  {
+                    "id": 1514,
+                    "label": "Mergus",
+                    "type": "internal",
+                    "children": [
+                      { "id": 89, "label": "Red_breasted_Merganser", "type": "leaf" }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 1600,
+        "label": "Caprimulgiformes",
+        "type": "internal",
+        "children": [
+          {
+            "id": 1610,
+            "label": "Caprimulgidae",
+            "type": "internal",
+            "children": [
+              {
+                "id": 1611,
+                "label": "Antrostomus",
+                "type": "internal",
+                "children": [
+                  { "id": 21, "label": "Chuck_will_Widow", "type": "leaf" },
+                  { "id": 104, "label": "Whip_poor_Will", "type": "leaf" }
+                ]
+              },
+              {
+                "id": 1612,
+                "label": "Chordeiles",
+                "type": "internal",
+                "children": [
+                  { "id": 91, "label": "Nighthawk", "type": "leaf" }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 1620,
+            "label": "Trochilidae",
+            "type": "internal",
+            "children": [
+              {
+                "id": 1621,
+                "label": "Calypte",
+                "type": "internal",
+                "children": [
+                  { "id": 66, "label": "Anna_Hummingbird", "type": "leaf" }
+                ]
+              },
+              {
+                "id": 1622,
+                "label": "Archilochus",
+                "type": "internal",
+                "children": [
+                  { "id": 67, "label": "Ruby_throated_Hummingbird", "type": "leaf" }
+                ]
+              },
+              {
+                "id": 1623,
+                "label": "Selasphorus",
+                "type": "internal",
+                "children": [
+                  { "id": 68, "label": "Rufous_Hummingbird", "type": "leaf" }
+                ]
+              },
+              {
+                "id": 1624,
+                "label": "Colibri",
+                "type": "internal",
+                "children": [
+                  { "id": 69, "label": "Green_Violetear", "type": "leaf" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 1700,
+        "label": "Pelecaniformes",
+        "type": "internal",
+        "children": [
+          {
+            "id": 1710,
+            "label": "Pelecanidae",
+            "type": "internal",
+            "children": [
+              {
+                "id": 1711,
+                "label": "Pelecanus",
+                "type": "internal",
+                "children": [
+                  { "id": 99, "label": "Brown_Pelican", "type": "leaf" },
+                  { "id": 100, "label": "White_Pelican", "type": "leaf" }
+                ]
+              }
+            ]
+          },
+          { "id": 1712, "label": "Phaethontidae", "type": "internal", "children": [] }
+        ]
+      },
+      {
+        "id": 1800,
+        "label": "Gaviiformes",
+        "type": "internal",
+        "children": [
+          {
+            "id": 1810,
+            "label": "Gaviidae",
+            "type": "internal",
+            "children": [
+              {
+                "id": 1811,
+                "label": "Gavia",
+                "type": "internal",
+                "children": [
+                  { "id": 85, "label": "Pacific_Loon", "type": "leaf" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 1900,
+        "label": "Piciformes",
+        "type": "internal",
+        "children": [
+          {
+            "id": 1910,
+            "label": "Picidae",
+            "type": "internal",
+            "children": [
+              { "id": 1914, "label": "Colaptes", "type": "internal", "children": [ { "id": 35, "label": "Northern_Flicker", "type": "leaf" } ] },
+              { "id": 1911, "label": "Melanerpes", "type": "internal", "children": [ { "id": 190, "label": "Red_headed_Woodpecker", "type": "leaf" } ] },
+              { "id": 1912, "label": "Sphyrapicus", "type": "internal", "children": [ { "id": 186, "label": "American_Three_toed_Woodpecker", "type": "leaf" } ] },
+              { "id": 1913, "label": "Dryobates", "type": "internal", "children": [ { "id": 191, "label": "Downy_Woodpecker", "type": "leaf" }, { "id": 189, "label": "Red_cockaded_Woodpecker", "type": "leaf" } ] },
+              { "id": 1915, "label": "Dryocopus", "type": "internal", "children": [ { "id": 187, "label": "Pileated_Woodpecker", "type": "leaf" } ] }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2000,
+        "label": "Coraciiformes",
+        "type": "internal",
+        "children": [
+          {
+            "id": 2010,
+            "label": "Alcedinidae",
+            "type": "internal",
+            "children": [
+              { "id": 2011, "label": "Megaceryle", "type": "internal", "children": [ { "id": 78, "label": "Belted_Kingfisher", "type": "leaf" }, { "id": 81, "label": "Ringed_Kingfisher", "type": "leaf" } ] },
+              { "id": 2012, "label": "Chloroceryle", "type": "internal", "children": [ { "id": 79, "label": "Green_Kingfisher", "type": "leaf" } ] },
+              { "id": 2013, "label": "Ceryle", "type": "internal", "children": [ { "id": 80, "label": "Pied_Kingfisher", "type": "leaf" } ] }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3000,
+        "label": "Passeriformes",
+        "type": "internal",
+        "children": [
+          {
+            "id": 3100,
+            "label": "Tyrannidae",
+            "type": "internal",
+            "children": [
+              { "id": 3101, "label": "Contopus", "type": "internal", "children": [ { "id": 101, "label": "Western_Wood_Pewee", "type": "leaf" }, { "id": 102, "label": "Sayornis", "type": "leaf" } ] },
+              { "id": 3102, "label": "Sayornis", "type": "internal", "children": [ { "id": 102, "label": "Sayornis", "type": "leaf" } ] },
+              { "id": 3103, "label": "Empidonax", "type": "internal", "children": [ { "id": 36, "label": "Acadian_Flycatcher", "type": "leaf" }, { "id": 38, "label": "Least_Flycatcher", "type": "leaf" }, { "id": 42, "label": "Yellow_bellied_Flycatcher", "type": "leaf" } ] },
+              { "id": 3104, "label": "Myiarchus", "type": "internal", "children": [ { "id": 37, "label": "Great_Crested_Flycatcher", "type": "leaf" } ] },
+              { "id": 3105, "label": "Tyrannus", "type": "internal", "children": [ { "id": 76, "label": "Tropical_Kingbird", "type": "leaf" }, { "id": 77, "label": "Gray_Kingbird", "type": "leaf" }, { "id": 40, "label": "Scissor_tailed_Flycatcher", "type": "leaf" } ] },
+              { "id": 3106, "label": "Pyrocephalus", "type": "internal", "children": [ { "id": 41, "label": "Vermilion_Flycatcher", "type": "leaf" } ] }
+            ]
+          },
+          {
+            "id": 3200,
+            "label": "Laniidae",
+            "type": "internal",
+            "children": [
+              { "id": 3201, "label": "Lanius", "type": "internal", "children": [ { "id": 110, "label": "Loggerhead_Shrike", "type": "leaf" }, { "id": 111, "label": "Great_Grey_Shrike", "type": "leaf" } ] }
+            ]
+          },
+          {
+            "id": 3300,
+            "label": "Vireonidae",
+            "type": "internal",
+            "children": [
+              {
+                "id": 3301,
+                "label": "Vireo",
+                "type": "internal",
+                "children": [
+                  { "id": 151, "label": "Blue_headed_Vireo", "type": "leaf" },
+                  { "id": 152, "label": "Philadelphia_Vireo", "type": "leaf" },
+                  { "id": 153, "label": "Red_eyed_Vireo", "type": "leaf" },
+                  { "id": 154, "label": "Warbling_Vireo", "type": "leaf" },
+                  { "id": 155, "label": "White_eyed_Vireo", "type": "leaf" },
+                  { "id": 156, "label": "Yellow_throated_Vireo", "type": "leaf" },
+                  { "id": 150, "label": "Black_capped_Vireo", "type": "leaf" }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 3400,
+            "label": "Corvidae",
+            "type": "internal",
+            "children": [
+              { "id": 3401, "label": "Corvus", "type": "internal", "children": [ { "id": 28, "label": "American_Crow", "type": "leaf" }, { "id": 29, "label": "Fish_Crow", "type": "leaf" }, { "id": 106, "label": "Common_Raven", "type": "leaf" }, { "id": 107, "label": "White_necked_Raven", "type": "leaf" } ] },
+              { "id": 3402, "label": "Cyanocitta", "type": "internal", "children": [ { "id": 72, "label": "Blue_Jay", "type": "leaf" }, { "id": 73, "label": "Florida_Jay", "type": "leaf" } ] },
+              { "id": 3403, "label": "Cyanocorax", "type": "internal", "children": [ { "id": 74, "label": "Green_Jay", "type": "leaf" } ] },
+              { "id": 3404, "label": "Nucifraga", "type": "internal", "children": [ { "id": 92, "label": "Clark_Nutcracker", "type": "leaf" } ] }
+            ]
+          },
+          {
+            "id": 3500,
+            "label": "Parulidae",
+            "type": "internal",
+            "children": [
+              {
+                "id": 3501,
+                "label": "Setophaga",
+                "type": "internal",
+                "children": [
+                  { "id": 108, "label": "American_Redstart", "type": "leaf" },
+                  { "id": 162, "label": "Cape_May_Warbler", "type": "leaf" },
+                  { "id": 157, "label": "Bay_breasted_Warbler", "type": "leaf" },
+                  { "id": 159, "label": "Black_throated_Blue_Warbler", "type": "leaf" },
+                  { "id": 161, "label": "Canada_Warbler", "type": "leaf" },
+                  { "id": 163, "label": "Cerulean_Warbler", "type": "leaf" },
+                  { "id": 164, "label": "Chestnut_sided_Warbler", "type": "leaf" },
+                  { "id": 166, "label": "Hooded_Warbler", "type": "leaf" },
+                  { "id": 168, "label": "Magnolia_Warbler", "type": "leaf" },
+                  { "id": 170, "label": "Myrtle_Warbler", "type": "leaf" },
+                  { "id": 173, "label": "Palm_Warbler", "type": "leaf" },
+                  { "id": 174, "label": "Pine_Warbler", "type": "leaf" },
+                  { "id": 175, "label": "Prairie_Warbler", "type": "leaf" },
+                  { "id": 181, "label": "Yellow_Warbler", "type": "leaf" }
+                ]
+              },
+              { "id": 3502, "label": "Geothlypis", "type": "internal", "children": [ { "id": 199, "label": "Common_Yellowthroat", "type": "leaf" } ] },
+              { "id": 3503, "label": "Icteria", "type": "internal", "children": [ { "id": 19, "label": "Yellow_breasted_Chat", "type": "leaf" } ] },
+              { "id": 3504, "label": "Seiurus", "type": "internal", "children": [ { "id": 182, "label": "Northern_Waterthrush", "type": "leaf" }, { "id": 183, "label": "Louisiana_Waterthrush", "type": "leaf" } ] }
+            ]
+          },
+          {
+            "id": 3600,
+            "label": "Icteridae",
+            "type": "internal",
+            "children": [
+              { "id": 3601, "label": "Agelaius", "type": "internal", "children": [ { "id": 9, "label": "Red_winged_Blackbird", "type": "leaf" } ] },
+              { "id": 3602, "label": "Xanthocephalus", "type": "internal", "children": [ { "id": 11, "label": "Yellow_headed_Blackbird", "type": "leaf" } ] },
+              { "id": 3603, "label": "Molothrus", "type": "internal", "children": [ { "id": 25, "label": "Bronzed_Cowbird", "type": "leaf" }, { "id": 26, "label": "Shiny_Cowbird", "type": "leaf" } ] },
+              { "id": 3604, "label": "Sturnella", "type": "internal", "children": [ { "id": 87, "label": "Western_Meadowlark", "type": "leaf" } ] },
+              { "id": 3605, "label": "Quiscalus", "type": "internal", "children": [ { "id": 48, "label": "Boat_tailed_Grackle", "type": "leaf" } ] },
+              { "id": 3606, "label": "Icterus", "type": "internal", "children": [ { "id": 94, "label": "Baltimore_Oriole", "type": "leaf" }, { "id": 95, "label": "Hooded_Oriole", "type": "leaf" }, { "id": 96, "label": "Orchard_Oriole", "type": "leaf" }, { "id": 97, "label": "Scott_Oriole", "type": "leaf" } ] }
+            ]
+          },
+          {
+            "id": 3700,
+            "label": "Fringillidae",
+            "type": "internal",
+            "children": [
+              { "id": 3701, "label": "Haemorhous", "type": "internal", "children": [ { "id": 34, "label": "Purple_Finch", "type": "leaf" } ] },
+              { "id": 3702, "label": "Leucosticte", "type": "internal", "children": [ { "id": 33, "label": "Gray_crowned_Rosy_Finch", "type": "leaf" } ] },
+              { "id": 3703, "label": "Coccothraustes", "type": "internal", "children": [ { "id": 54, "label": "Evening_Grosbeak", "type": "leaf" } ] },
+              { "id": 3704, "label": "Pinicola", "type": "internal", "children": [ { "id": 55, "label": "Pine_Grosbeak", "type": "leaf" } ] },
+              { "id": 3705, "label": "Spinus", "type": "internal", "children": [ { "id": 46, "label": "American_Goldfinch", "type": "leaf" }, { "id": 47, "label": "European_Goldfinch", "type": "leaf" } ] }
+            ]
+          },
+          {
+            "id": 3800,
+            "label": "Cardinalidae",
+            "type": "internal",
+            "children": [
+              { "id": 3801, "label": "Cardinalis", "type": "internal", "children": [ { "id": 16, "label": "Cardinal", "type": "leaf" } ] },
+              { "id": 3802, "label": "Pheucticus", "type": "internal", "children": [ { "id": 56, "label": "Rose_breasted_Grosbeak", "type": "leaf" } ] },
+              { "id": 3803, "label": "Passerina", "type": "internal", "children": [ { "id": 13, "label": "Indigo_Bunting", "type": "leaf" }, { "id": 14, "label": "Lazuli_Bunting", "type": "leaf" }, { "id": 15, "label": "Painted_Bunting", "type": "leaf" }, { "id": 53, "label": "Blue_Grosbeak", "type": "leaf" } ] }
+            ]
+          },
+          {
+            "id": 3900,
+            "label": "Mimidae",
+            "type": "internal",
+            "children": [
+              { "id": 3901, "label": "Dumetella", "type": "internal", "children": [ { "id": 18, "label": "Gray_Catbird", "type": "leaf" } ] },
+              { "id": 3902, "label": "Mimus", "type": "internal", "children": [ { "id": 90, "label": "Mockingbird", "type": "leaf" } ] },
+              { "id": 3903, "label": "Toxostoma", "type": "internal", "children": [ { "id": 148, "label": "Brown_Thrasher", "type": "leaf" }, { "id": 149, "label": "Sage_Thrasher", "type": "leaf" } ] }
+            ]
+          },
+          {
+            "id": 4000,
+            "label": "Passerellidae",
+            "type": "internal",
+            "children": [
+              { "id": 4001, "label": "Melospiza", "type": "internal", "children": [ { "id": 128, "label": "Song_Sparrow", "type": "leaf" } ] },
+              { "id": 4002, "label": "Zonotrichia", "type": "internal", "children": [ { "id": 131, "label": "White_crowned_Sparrow", "type": "leaf" }, { "id": 132, "label": "White_throated_Sparrow", "type": "leaf" } ] },
+              { "id": 4003, "label": "Passerella", "type": "internal", "children": [ { "id": 119, "label": "Fox_Sparrow", "type": "leaf" } ] },
+              { "id": 4004, "label": "Ammodramus", "type": "internal", "children": [ { "id": 120, "label": "Grasshopper_Sparrow", "type": "leaf" }, { "id": 122, "label": "Henslow_Sparrow", "type": "leaf" }, { "id": 123, "label": "Le_Conte_Sparrow", "type": "leaf" } ] },
+              { "id": 4005, "label": "Spizella", "type": "internal", "children": [ { "id": 115, "label": "Chipping_Sparrow", "type": "leaf" }, { "id": 116, "label": "Clay_colored_Sparrow", "type": "leaf" }, { "id": 118, "label": "Field_Sparrow", "type": "leaf" } ] },
+              { "id": 4006, "label": "Junco", "type": "internal", "children": [ { "id": 75, "label": "Dark_eyed_Junco", "type": "leaf" } ] },
+              { "id": 4007, "label": "Pipilo", "type": "internal", "children": [ { "id": 20, "label": "Eastern_Towhee", "type": "leaf" }, { "id": 147, "label": "Green_tailed_Towhee", "type": "leaf" } ] }
+            ]
+          },
+          {
+            "id": 4100,
+            "label": "Cuculidae",
+            "type": "internal",
+            "children": [
+              { "id": 4101, "label": "Crotophaga", "type": "internal", "children": [ { "id": 3, "label": "Groove_billed_Ani", "type": "leaf" } ] },
+              { "id": 4102, "label": "Coccyzus", "type": "internal", "children": [ { "id": 30, "label": "Black_billed_Cuckoo", "type": "leaf" }, { "id": 31, "label": "Mangrove_Cuckoo", "type": "leaf" }, { "id": 32, "label": "Yellow_billed_Cuckoo", "type": "leaf" } ] },
+              { "id": 4103, "label": "Geococcyx", "type": "internal", "children": [ { "id": 109, "label": "Geococcyx", "type": "leaf" } ] }
+            ]
+          },
+          {
+            "id": 4200,
+            "label": "Bombycillidae",
+            "type": "internal",
+            "children": [
+              { "id": 4201, "label": "Bombycilla", "type": "internal", "children": [ { "id": 184, "label": "Bohemian_Waxwing", "type": "leaf" }, { "id": 185, "label": "Cedar_Waxwing", "type": "leaf" } ] }
+            ]
+          },
+          {
+            "id": 4300,
+            "label": "Troglodytidae",
+            "type": "internal",
+            "children": [
+              { "id": 4301, "label": "Thryothorus", "type": "internal", "children": [ { "id": 194, "label": "Carolina_Wren", "type": "leaf" } ] },
+              { "id": 4302, "label": "Campylorhynchus", "type": "internal", "children": [ { "id": 193, "label": "Cactus_Wren", "type": "leaf" } ] },
+              { "id": 4303, "label": "Thryomanes", "type": "internal", "children": [ { "id": 192, "label": "Bewick_Wren", "type": "leaf" } ] },
+              { "id": 4304, "label": "Troglodytes", "type": "internal", "children": [ { "id": 195, "label": "House_Wren", "type": "leaf" }, { "id": 198, "label": "Winter_Wren", "type": "leaf" } ] },
+              { "id": 4305, "label": "Cistothorus", "type": "internal", "children": [ { "id": 196, "label": "Marsh_Wren", "type": "leaf" } ] }
+            ]
+          },
+          {
+            "id": 4400,
+            "label": "Alaudidae",
+            "type": "internal",
+            "children": [
+              { "id": 4401, "label": "Eremophila", "type": "internal", "children": [ { "id": 84, "label": "Horned_Lark", "type": "leaf" } ] }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

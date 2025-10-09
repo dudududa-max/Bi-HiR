@@ -1,0 +1,122 @@
+{
+    "id": 50,
+    "label": "Naval Vessels",
+    "type": "internal",
+    "children": [
+      {
+        "id": 51,
+        "label": "Combat Ships",
+        "type": "internal",
+        "children": [
+          {
+            "id": 55,
+            "label": "Capital Ships",
+            "type": "internal",
+            "children": [
+              { "id": 1, "label": "aircraft carrier", "type": "leaf" },
+              { "id": 6, "label": "cruiser", "type": "leaf" }
+            ]
+          },
+          {
+            "id": 56,
+            "label": "Escort Ships",
+            "type": "internal",
+            "children": [
+              { "id": 2, "label": "destroyer", "type": "leaf" },
+              { "id": 4, "label": "frigate", "type": "leaf" },
+              { "id": 9, "label": "command ship", "type": "leaf" },
+              { "id": 12, "label": "combat boat", "type": "leaf" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "label": "Amphibious Ships",
+        "type": "internal",
+        "children": [
+          { "id": 3, "label": "landing craft", "type": "leaf" },
+          {
+            "id": 58,
+            "label": "Amphibious Support",
+            "type": "internal",
+            "children": [
+              { "id": 5, "label": "amphibious transport dock", "type": "leaf" },
+              { "id": 16, "label": "hovercraft", "type": "leaf" },
+              {
+                "id": 65,
+                "label": "Amphibious Assault",
+                "type": "internal",
+                "children": [
+                  { "id": 7, "label": "Tarawa-class amphibious assault ship", "type": "leaf" },
+                  { "id": 8, "label": "amphibious assault ship", "type": "leaf" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 53,
+        "label": "Support Ships",
+        "type": "internal",
+        "children": [
+          { "id": 10, "label": "submarine", "type": "leaf" },
+          {
+            "id": 60,
+            "label": "Auxiliary Vessels",
+            "type": "internal",
+            "children": [
+              { "id": 11, "label": "medical ship", "type": "leaf" },
+              { "id": 13, "label": "auxiliary ship", "type": "leaf" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 54,
+        "label": "Civilian Ships",
+        "type": "internal",
+        "children": [
+          {
+            "id": 61,
+            "label": "Merchant Ships",
+            "type": "internal",
+            "children": [
+              {
+                "id": 69,
+                "label": "Cargo Ships",
+                "type": "internal",
+                "children": [
+                  { "id": 14, "label": "container ship", "type": "leaf" },
+                  { "id": 17, "label": "bulk carrier", "type": "leaf" },
+                  { "id": 15, "label": "car carrier", "type": "leaf" }
+                ]
+              },
+              {
+                "id": 70,
+                "label": "Tankers",
+                "type": "internal",
+                "children": [
+                  { "id": 18, "label": "oil tanker", "type": "leaf" },
+                  { "id": 21, "label": "liquefied gas ship", "type": "leaf" }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 62,
+            "label": "Special Purpose",
+            "type": "internal",
+            "children": [
+              { "id": 19, "label": "fishing boat", "type": "leaf" },
+              { "id": 20, "label": "passenger ship", "type": "leaf" },
+              { "id": 22, "label": "barge", "type": "leaf" }
+            ]
+          }
+        ]
+      },
+      { "id": 0, "label": "non-ship", "type": "leaf" }
+    ]
+  }
+  

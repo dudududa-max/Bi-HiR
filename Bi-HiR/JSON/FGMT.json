@@ -1,0 +1,162 @@
+{
+    "id": "ROOT",
+    "label": "All",
+    "type": "internal",
+    "children": [
+      {
+        "id": 100,
+        "label": "Aircrafts",
+        "type": "internal",
+        "children": [
+          {
+            "id": 101,
+            "label": "Strategic Bomber",
+            "type": "internal",
+            "children": [
+              { "id": 1, "label": "B-29", "type": "leaf" },
+              { "id": 0, "label": "B-2", "type": "leaf" },
+              {
+                "id": 102,
+                "label": "Nuclear Bomber",
+                "type": "internal",
+                "children": [
+                  { "id": 2, "label": "B-1", "type": "leaf" },
+                  { "id": 3, "label": "B-52", "type": "leaf" }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 103,
+            "label": "Fighter",
+            "type": "internal",
+            "children": [
+              { "id": 4, "label": "F-16", "type": "leaf" },
+              { "id": 5, "label": "F-22", "type": "leaf" }
+            ]
+          },
+          {
+            "id": 104,
+            "label": "Transport",
+            "type": "internal",
+            "children": [
+              {
+                "id": 105,
+                "label": "Strategic Airlift",
+                "type": "internal",
+                "children": [
+                  { "id": 6, "label": "C-5", "type": "leaf" },
+                  { "id": 7, "label": "C-17", "type": "leaf" }
+                ]
+              },
+              {
+                "id": 106,
+                "label": "Tactical Airlift",
+                "type": "internal",
+                "children": [
+                  { "id": 8, "label": "C-130", "type": "leaf" },
+                  { "id": 9, "label": "C-135", "type": "leaf" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 200,
+        "label": "Vehicle",
+        "type": "internal",
+        "children": [
+          {
+            "id": 201,
+            "label": "Passenger Vehicle",
+            "type": "internal",
+            "children": [
+              { "id": 10, "label": "Small Car", "type": "leaf" },
+              { "id": 11, "label": "Bus", "type": "leaf" },
+              { "id": 12, "label": "Van", "type": "leaf" }
+            ]
+          },
+          {
+            "id": 202,
+            "label": "Commercial Vehicle",
+            "type": "internal",
+            "children": [
+              {
+                "id": 203,
+                "label": "Truck",
+                "type": "internal",
+                "children": [
+                  { "id": 13, "label": "Cargo Truck", "type": "leaf" },
+                  { "id": 14, "label": "Dump Truck", "type": "leaf" }
+                ]
+              },
+              {
+                "id": 204,
+                "label": "Construction Equipment",
+                "type": "internal",
+                "children": [
+                  { "id": 15, "label": "Trailer", "type": "leaf" },
+                  { "id": 16, "label": "Tractor", "type": "leaf" },
+                  { "id": 17, "label": "Excavator", "type": "leaf" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 300,
+        "label": "Naval Vessels",
+        "type": "internal",
+        "children": [
+          {
+            "id": 301,
+            "label": "Combat Ships",
+            "type": "internal",
+            "children": [
+              {
+                "id": 302,
+                "label": "Capital Ships",
+                "type": "internal",
+                "children": [
+                  { "id": 18, "label": "aircraft carrier", "type": "leaf" },
+                  { "id": 19, "label": "cruiser", "type": "leaf" }
+                ]
+              },
+              {
+                "id": 303,
+                "label": "Escort Ships",
+                "type": "internal",
+                "children": [
+                  { "id": 20, "label": "destroyer", "type": "leaf" },
+                  { "id": 21, "label": "frigate", "type": "leaf" },
+                  { "id": 22, "label": "command ship", "type": "leaf" }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 304,
+            "label": "Support Ships",
+            "type": "internal",
+            "children": [
+              { "id": 23, "label": "medical ship", "type": "leaf" },
+              { "id": 24, "label": "auxiliary ship", "type": "leaf" }
+            ]
+          },
+          {
+            "id": 305,
+            "label": "Civilian Ships",
+            "type": "internal",
+            "children": [
+              { "id": 25, "label": "container ship", "type": "leaf" },
+              { "id": 26, "label": "car carrier", "type": "leaf" },
+              { "id": 27, "label": "bulk carrier", "type": "leaf" }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

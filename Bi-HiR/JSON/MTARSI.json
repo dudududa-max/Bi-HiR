@@ -1,0 +1,98 @@
+{
+    "id": 50,
+    "label": "Aircrafts",
+    "type": "internal",
+    "children": [
+      {
+        "id": 20,
+        "label": "Strategic Bomber",
+        "type": "internal",
+        "children": [
+          {
+            "id": 40,
+            "label": "Nuclear Bomber",
+            "type": "internal",
+            "children": [
+              { "id": 0, "label": "B-1", "type": "leaf" },
+              { "id": 2, "label": "B-52", "type": "leaf" }
+            ]
+          },
+          { "id": 3, "label": "B-29", "type": "leaf" },
+          { "id": 1, "label": "B-2", "type": "leaf" }
+        ]
+      },
+      {
+        "id": 22,
+        "label": "Fighter",
+        "type": "internal",
+        "children": [
+          { "id": 5, "label": "F-22", "type": "leaf" },
+          { "id": 4, "label": "F-16", "type": "leaf" }
+        ]
+      },
+      {
+        "id": 23,
+        "label": "Transport",
+        "type": "internal",
+        "children": [
+          {
+            "id": 44,
+            "label": "Strategic Airlift",
+            "type": "internal",
+            "children": [
+              { "id": 8, "label": "C-5", "type": "leaf" },
+              { "id": 9, "label": "C-17", "type": "leaf" }
+            ]
+          },
+          {
+            "id": 45,
+            "label": "Tactical Airlift",
+            "type": "internal",
+            "children": [
+              { "id": 10, "label": "C-130", "type": "leaf" },
+              { "id": 11, "label": "C-135", "type": "leaf" }
+            ]
+          },
+          { "id": 12, "label": "KC-10", "type": "leaf" }
+        ]
+      },
+      {
+        "id": 26,
+        "label": "Special Operations",
+        "type": "internal",
+        "children": [
+          { "id": 7, "label": "A-10", "type": "leaf" },
+          { "id": 13, "label": "E-3", "type": "leaf" },
+          {
+            "id": 49,
+            "label": "Vintage Aircraft",
+            "type": "internal",
+            "children": [
+              { "id": 17, "label": "A-26", "type": "leaf" },
+              { "id": 6, "label": "P-63", "type": "leaf" }
+            ]
+          },
+          { "id": 16, "label": "U-2", "type": "leaf" }
+        ]
+      },
+      {
+        "id": 25,
+        "label": "Trainer",
+        "type": "internal",
+        "children": [
+          { "id": 14, "label": "T-43", "type": "leaf" },
+          { "id": 15, "label": "T-6", "type": "leaf" }
+        ]
+      },
+      {
+        "id": 27,
+        "label": "Commercial Derivatives",
+        "type": "internal",
+        "children": [
+          { "id": 18, "label": "Boeing", "type": "leaf" },
+          { "id": 19, "label": "C-21", "type": "leaf" }
+        ]
+      }
+    ]
+  }
+  

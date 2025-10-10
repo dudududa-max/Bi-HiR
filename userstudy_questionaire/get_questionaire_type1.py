@@ -206,7 +206,6 @@ def generate_explanations(args, model_type):
                 if all_classes_complete:
                     break
 
-# 示例调用（保持不变）
 if __name__ == "__main__":
     device = torch.device("cuda")
     

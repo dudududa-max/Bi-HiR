@@ -42,7 +42,7 @@ def loaders(batch_size):
     test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=batch_size, shuffle=False, num_workers=4)
     return train_loader, test_loader
 
-def load_model(path='/DATA/zjz/MTARSI/models/resnet50_MTARSI.pth'):
+def load_model(path='your_ckpt_path.pth'):
     # model = resnet50(pretrained=False)
     # num_ftrs = model.fc.in_features
     # model.fc = nn.Linear(num_ftrs, 23)

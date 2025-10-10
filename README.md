@@ -1,7 +1,7 @@
 Fine-grained visual recognition (FGVR) requires not only high accuracy but also
 human-aligned interpretability, particularly in safety-critical applications. While
 human cognition naturally follows a coarse-to-fine reasoning process—rapid
-holistic categorization for coarse-grained class followed by attention to local details for fine-grained class—existing post-hoc and ante-hoc interpretability methods fall short in capturing this hierarchy automatically. To address this gap, we
+holistic categorization for coarse-grained class followed by attention to local details for fine-grained class—existing post-hoc and ante-hoc interpretability methods fall short in capturing this hierarchy automatically. To address this gap, we
 propose Bi-HiR, a novel Bidirectional Hierarchical Reasoning framework that
 emulates human-like cognition by integrating top-down semantic reasoning with
 bottom-up prototype-based explanations. Specifically, Bi-HiR: (1) leverages large

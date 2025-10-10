@@ -10,17 +10,8 @@ args = {
     'mobile_vit': './models/mobilevit.pth',
     # 'perts': ['Square'],
     'perts': ['Gaussian'],
-    # 'exps': ['Grad', 'Int_Grad', 'GBP', 'NB'],
     # 'exps':['Integrated_Gradients', 'Occlusion', 'DeepLIFT', 'Lime', 'InputXGradient', 'GradCAM'],
-    'exps':['DeepLIFT'],
-    # 'sgs': ['Grad', 'Int_Grad', 'GBP']
-    'sgs': ['Integrated_Gradients'],
-    # 'vis': ['Integrated_Gradients', 'Occlusion', 'DeepLIFT', 'Lime', 'InputXGradient', 'Saliency', 'Shapley_VS', 'GradCAM'],
-    'vis': ['Integrated_Gradients', 'Occlusion', 'DeepLIFT', 'Lime', 'InputXGradient', 'GradCAM'],
-    # 'topk': ['Integrated_Gradients', 'Occlusion', 'DeepLIFT', 'Lime', 'InputXGradient', 'Shapley_VS', 'GradCAM']
-    'topk':['Integrated_Gradients'],
     'ques':['Integrated_Gradients', 'Occlusion', 'DeepLIFT', 'Lime', 'GradCAM'],
-    # 'ques':['Lime']
 }
 
 # use the following args to obtain results on global explanations

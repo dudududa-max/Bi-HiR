@@ -185,9 +185,9 @@ def get_explanation_pdt(model_type, image, model, label, exp, sg_r=None, sg_N=No
     elif exp == 'Occlusion':
         from captum.attr import Occlusion
         occlusion = Occlusion(model)
-        sliding_window_shapes = (image.shape[1], 4, 4)  # 遮挡窗口的大小
-        strides = (image.shape[1], 4, 4)  # 遮挡窗口滑动的步长
-        # baselines = generate_Gaussian_noise(image)  # 遮挡窗口的值设为高斯噪声
+        sliding_window_shapes = (image.shape[1], 4, 4)  
+        strides = (image.shape[1], 4, 4)  
+        # baselines = generate_Gaussian_noise(image)  
         baselines = 0
         expl = occlusion.attribute(image,
                                    target=label,

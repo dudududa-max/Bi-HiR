@@ -35,8 +35,7 @@ def loaders(batch_size):
     root="/DATA/NAS/zjz/MTARSI_Dataset/train",
     transform=train_transform)
     test_dataset = EnhancedImageFolder(
-    # root="/DATA/NAS/zjz/MTARSI_Dataset/test",
-    root="/DATA/NAS/zjz/MTARSI_Dataset/explain",
+    root="your_dataset_path",
     transform=test_transform)
     train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True, num_workers=4)
     test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=batch_size, shuffle=False, num_workers=4)
@@ -60,14 +59,14 @@ class EnhancedImageFolder(ImageFolder):
     
     def __getitem__(self, index):
         img_path, label = self.samples[index]
-        orig_size = self.orig_sizes[index]  # (width, height) 元组
+        orig_size = self.orig_sizes[index]  
         
         img = Image.open(img_path)
         
         if img.mode != 'RGB':
             img = img.convert('RGB')
         
-        pre_transform_size = img.size  # (width, height) 元组
+        pre_transform_size = img.size  
         
         if self.transform:
             img = self.transform(img)

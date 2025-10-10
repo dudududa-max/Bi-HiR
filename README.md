@@ -1,3 +1,5 @@
+# Bidirectional Hierarchical Reasoning for Fine-grained Visual Recognition
+
 Fine-grained visual recognition (FGVR) requires not only high accuracy but also
 human-aligned interpretability, particularly in safety-critical applications. While
 human cognition naturally follows a coarse-to-fine reasoning process—rapid

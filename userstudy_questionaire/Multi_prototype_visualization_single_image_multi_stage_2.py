@@ -1,5 +1,3 @@
-# 多层特征图上采样进行原型可视化,增加强度影响
-
 import os, cv2, torch, numpy as np
 import torch.nn as nn
 from PIL import Image
@@ -7,11 +5,9 @@ from torchvision import models, transforms
 from torchvision.models.feature_extraction import create_feature_extractor
 from torchvision.models.feature_extraction import get_graph_node_names
 
-# ────────── 1 设备 ──────────
 device = torch.device('cuda:2' if torch.cuda.is_available() else 'cpu')
 print('>>> Using device:', device)
 
-# ────────── 2 模型 ──────────
 model_path = '/STAT/zsk/Remote_sensing_dataset/weights_files/trained_resnet50_FGSC-23_200epochs.pth'
 backbone   = models.resnet50(weights=None)
 backbone.fc = nn.Linear(backbone.fc.in_features, 23)
@@ -19,9 +15,8 @@ backbone.load_state_dict(torch.load(model_path, map_location=device))
 backbone.eval().to(device)
 
 # train_nodes, eval_nodes = get_graph_node_names(backbone)
-# print(eval_nodes)          # 看看评估模式下有哪些节点名
+# print(eval_nodes)          
 
-# 需要抓取的层；键名任意，只要能在 return_nodes 里唯一标识
 return_nodes = {
     # 'stem'   : 'stem',                      # conv-bn-relu-maxpool
     # 'relu'   : 'pre_pool',   # 112×112
@@ -32,7 +27,6 @@ return_nodes = {
 }
 extractor = create_feature_extractor(backbone, return_nodes=return_nodes).to(device)
 
-# ────────── 3 输入与目标 ──────────
 transform = transforms.Compose([
     transforms.Resize((224, 224)),
     transforms.ToTensor(),
@@ -40,25 +34,13 @@ transform = transforms.Compose([
                          std =[0.1913, 0.1849, 0.1884]),
 ])
 
-img_path  = "/STAT/zsk/Remote_sensing_dataset/FGSC-23_Dataset/train/11/11_7_29_12347.jpg" # medical ship
-# img_path  = "/STAT/zsk/Remote_sensing_dataset/FGSC-23_Dataset/train/11/11_7_84_11839.jpg" # medical ship1
-# img_path  = "/STAT/zsk/Remote_sensing_dataset/FGSC-23_Dataset/train/11/11_7_28_12685.jpg" # medical ship2
-# img_path  = "/STAT/zsk/Remote_sensing_dataset/FGSC-23_Dataset/train/1/1_3_129_10110.jpg" # aircraft-carrier
-# img_path  = "/STAT/zsk/Remote_sensing_dataset/FGSC-23_Dataset/train/1/1_3_97_11093.jpg" # aircraft-carrier1
-# img_path  = "/STAT/zsk/Remote_sensing_dataset/FGSC-23_Dataset/train/1/1_3_124_11618.jpg" # aircraft-carrier2
-# img_path  = "/STAT/zsk/Remote_sensing_dataset/MTARSI_Dataset/train/C-17/324.jpeg" # C-17
-# img_path  = "/STAT/zsk/Remote_sensing_dataset/MTARSI_Dataset/train/C-17/555.jpeg" # C-171
-# img_path  = "/STAT/zsk/Remote_sensing_dataset/MTARSI_Dataset/train/C-17/262.jpeg" # C-172
-# img_path  = "/STAT/zsk/Remote_sensing_dataset/MTARSI_Dataset/train/F-22/173.jpeg" # F-22
-# img_path  = "/STAT/zsk/Remote_sensing_dataset/MTARSI_Dataset/train/F-22/1018.jpeg" # F-221
-# img_path  = "/STAT/zsk/Remote_sensing_dataset/MTARSI_Dataset/train/F-22/250.jpeg" # F-222
-# img_path  = "/STAT/zsk/Remote_sensing_dataset/for_analisys_case/aircraft-carrier_and_F-22.jpg" # aircraft-carrier_and_F-22
+img_path  = "path_of_medeicalship.jpg" # medical ship
+
 
 orig_img  = Image.open(img_path).convert('RGB')
 orig_np   = np.array(orig_img)
 inp       = transform(orig_img).unsqueeze(0).to(device)
 
-# ①为每一层单独写坐标+阈值 ②序数需对应
 targets = {
     'layer4': dict(
         # spatial_locs=[(7, 6), (9, 5), (15, 15), (16, 16), (17, 17), (18, 16), (17, 15), (18, 14), (48, 51), (49, 50)], # layer1
@@ -209,11 +191,9 @@ targets = {
     # ), # F-22 and aircraft-carrier
 }
 
-# ────────── 4 前向获取多层特征 ──────────
 with torch.no_grad():
     feats = extractor(inp)            # dict: {'layer1':T, 'layer2':T, ...}
 
-# ────────── 5 生成叠加热图 ──────────
 h0, w0          = orig_np.shape[:2]
 combined_heat   = np.zeros((h0, w0, 3), dtype=np.float32)
 
@@ -223,7 +203,6 @@ for lname, cfg in targets.items():
     fm_flat = fmap.view(C, -1)        # 预计算一次 L2-norm map
     fm_norm = fm_flat.norm(dim=0).view(H, W)
 
-    # —— 新增：如果没写权重，则全设为1.0
     weights = cfg.get('weights', [1.0] * len(cfg['spatial_locs']))
     
     for i, ((sx, sy), thr, w) in enumerate(zip(cfg['spatial_locs'], cfg['thresholds'], weights)):
@@ -232,14 +211,11 @@ for lname, cfg in targets.items():
         dot_map    = (fmap * proto_vec.view(-1, 1, 1)).sum(dim=0)
         sim_map    = (dot_map / (fm_norm * proto_norm + 1e-8)).cpu().numpy()
 
-        # 归一化 & 阈值
         sim_map -= sim_map.min()
         sim_map /= (sim_map.max() + 1e-8)
         sim_map[sim_map < thr] = 0
 
-        # 上采样到原图
         sim_up     = cv2.resize(sim_map, (w0, h0), interpolation=cv2.INTER_LINEAR)
-        # 这里就乘以你手动指定的权重
         sim_up = sim_up * w
         
         heat_uint8 = np.uint8(255 * sim_up)
@@ -248,14 +224,13 @@ for lname, cfg in targets.items():
 
         combined_heat += heat_rgb.astype(np.float32)
 
-# ────────── 6 叠加到原图并保存 ──────────
 combined_heat = np.clip(combined_heat, 0, 255)
 combined_heat = (combined_heat / (combined_heat.max() + 1e-8)) * 255
 
 overlay = cv2.addWeighted(orig_np.astype(np.uint8), 0.5,
                           combined_heat.astype(np.uint8), 0.5, 0)
 
-save_root = "/DATA/zjz/MTARSI/questionaire2.0"
+save_root = "./questionaire2.0"
 os.makedirs(save_root, exist_ok=True)
 base_name = os.path.splitext(os.path.basename(img_path))[0]
 out_path  = os.path.join(save_root, f"{base_name}_layer4_heatmap_Medicalship_2.png")

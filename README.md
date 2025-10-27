@@ -55,19 +55,18 @@ To train Bi-HiR, run the following command
 
 ```bash
 python main.py \
-    --dataset ${DATASET} \
-    --arch 'ResNet-50_Bi-HiR' \
-    --proto_num '10' \
-    --target_num  '3'\
-    --epochs 120 \
-    --batch_size 32 \
-    --device '0' \
-    --save_path ${SAVE_PATH} \
+  --dataset "${DATASET}" \
+  --arch 'ResNet-50_Bi-HiR' \
+  --proto_num '10' \
+  --target_num '3' \
+  --epochs 120 \
+  --batch_size 32 \
+  --device '0' \
+  --save_path "${SAVE_PATH}"
 ```
 
-- Here the datatxt_train, datatxt_OFA1, datatxt_OFA2, datatxt_OFA3, datatxt_val are the path of data list which are provided in the above link.
-- Train_num is the number of training process to ensure the stability of result.
-- Patience is the parameter of earlystop strategy to stop training when accuracy of validation set does not improve.
-- Arch is the type of backbone which can be selected during Densenet121_PIHA, Aconvnet_PIHA and MSNet_PIHA.
-- Part_num is the numbers of clusters in data preparation and part_num of our data is 4.
-- Attention_setting decide whether to use our PIHA.
+- Here the dataset is the path of data.
+- Arch is the type of backbone which can be selected to construct Bi-HiR.
+- Proto_num is the number of protypes.
+- Target_num is the top-k classes selected by the Grad-CAM method based on the highest scores.
+

@@ -26,7 +26,6 @@ This is the official implementation for paper "Bidirectional Hierarchical Reason
 </figure>
 
 
-
 <figure style="text-align: center; margin-bottom: 2em;">
   <img width="1397" height="852" alt="method" src="https://github.com/user-attachments/assets/47546921-e35a-448b-93a5-2b8f8b22530f" />
   <figcaption>Figure 2. The proposed architecture comprises five key components:

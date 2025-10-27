@@ -38,18 +38,6 @@ Together, these modules facilitate a top-down, human-like reasoning process that
 </figcaption>
 </figure>
 
-<figure style="text-align: center; margin-bottom: 2em;">
-  <img width="942" height="545" alt="example1" src="https://github.com/user-attachments/assets/8369037f-7dcf-4bf4-8700-2819c0573adf" />
-  <figcaption>Exampl of questionaire type 1
-</figcaption>
-</figure>
-
-<figure style="text-align: center; margin-bottom: 2em;">
-  <img width="1081" height="622" alt="example2" src="https://github.com/user-attachments/assets/9eb04b05-04fd-47f4-b918-de9d53da1bb9" />
-  <figcaption>Exampl of questionaire type 2
-</figcaption>
-</figure>
-
 ## 3. Contributions
 
 - We propose a novel Bidirectional Hierarchical Reasoning framework for FGVR to emulate human top-down and bottom-up cognition mechanism.

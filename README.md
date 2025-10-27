@@ -40,26 +40,13 @@ Together, these modules facilitate a top-down, human-like reasoning process that
 
 <figure style="text-align: center; margin-bottom: 2em;">
   <img width="942" height="545" alt="example1" src="https://github.com/user-attachments/assets/8369037f-7dcf-4bf4-8700-2819c0573adf" />
-
-  <figcaption>Figure 2. The proposed architecture comprises five key components:
-(a) Post-hoc Enhancement,
-(b) Multi-scale Aggregation,
-(c) Semantic Hierarchy Construction,
-(d) Bi-HiR Training, and
-(e) Bi-HiR Inference.
-Together, these modules facilitate a top-down, human-like reasoning process that progressively transitions from generalist to specialist understanding.
+  <figcaption>Exampl of questionaire type 1
 </figcaption>
 </figure>
 
 <figure style="text-align: center; margin-bottom: 2em;">
   <img width="1081" height="622" alt="example2" src="https://github.com/user-attachments/assets/9eb04b05-04fd-47f4-b918-de9d53da1bb9" />
-  <figcaption>Figure 2. The proposed architecture comprises five key components:
-(a) Post-hoc Enhancement,
-(b) Multi-scale Aggregation,
-(c) Semantic Hierarchy Construction,
-(d) Bi-HiR Training, and
-(e) Bi-HiR Inference.
-Together, these modules facilitate a top-down, human-like reasoning process that progressively transitions from generalist to specialist understanding.
+  <figcaption>Exampl of questionaire type 2
 </figcaption>
 </figure>
 

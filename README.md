@@ -17,7 +17,7 @@ This is the official implementation for paper "Bidirectional Hierarchical Reason
 
 ## 2. Features
 
-<figure style="text-align: center;">
+<figure style="text-align: center; margin-bottom: 2em;">
   <img width="2060" height="1049" alt="Figure1_4" src="https://github.com/user-attachments/assets/ce9ec347-c64d-4ca3-9d15-3ebdda72e6ab" />
   <figcaption>Figure 1. Four images from different categories are concatenated into a 2×2 grid as input. The results demonstrate that:
 (1) Bi-HiR can effectively discriminate between fine-grained classes and provides trustworthy coarse-to-fine hierarchical explanations at both conceptual and visual levels;
@@ -25,7 +25,9 @@ This is the official implementation for paper "Bidirectional Hierarchical Reason
 (3) The visual explanations produced by Bi-HiR exhibit high consistency between single-image and 2×2 grid inputs, whereas the compared methods lack such consistency in their explanations.</figcaption>
 </figure>
 
-<figure style="text-align: center;">
+
+
+<figure style="text-align: center; margin-bottom: 2em;">
   <img width="1397" height="852" alt="method" src="https://github.com/user-attachments/assets/47546921-e35a-448b-93a5-2b8f8b22530f" />
   <figcaption>Figure 2. The proposed architecture comprises five key components:
 (a) Post-hoc Enhancement,

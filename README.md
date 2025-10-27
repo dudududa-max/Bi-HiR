@@ -46,6 +46,9 @@ Together, these modules facilitate a top-down, human-like reasoning process that
 
 - Extensive evaluations demonstrate Bi-HiR achieves competitive SOTA performance and significant improvements zero-shot generalization, human trust, and model diagnose.
 
+- The results of user study reveal the superiority of Bi-HiR's interpretability on human trust and model error diagnose.
+
+
 ## 4. Getting Started
 
 ### 4.1 Data Preparation

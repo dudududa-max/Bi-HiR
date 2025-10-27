@@ -43,8 +43,6 @@ python main.py \
     --epochs 120 \
     --batch_size 32 \
     --device '0' \
-    --arch 'Densenet121_PIHA' \
-    --attention_setting True \
     --save_path ${SAVE_PATH} \
 ```
 
